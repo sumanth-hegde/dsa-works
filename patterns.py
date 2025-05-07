@@ -64,4 +64,18 @@ for i in range(n):
 
 print("\n==================================================================\n")
 
+for i in range(n):
+    space = 2 * (n - 1)
+    for j in range(1, i):
+        print(j, end="")
+    for j in range(1, space):
+        print(" ", end="")
+    for j in range(1, i, -1):
+        print(j, end="")
+    print()
+    space -= 2
+
+print("\n==================================================================\n")
+
+
 
