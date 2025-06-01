@@ -1,9 +1,8 @@
 def leaders(nums):
-    i, maxi, result = 0, nums[0], []
-    while i < len(nums)-1:
-        if nums[i] > max(nums[i+1:]):
-            result.append(nums[i])
-        i += 1
+    result = []
+    for num in range(len(nums)-1):
+        if nums[num] > max(nums[num+1:]):
+            result.append(nums[num])
     result.append(nums[-1])
     return result
 
